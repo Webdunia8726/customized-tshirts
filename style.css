@@ -1,6 +1,12 @@
 body {
     font-family: 'Poppins', sans-serif !important; /* Default font */
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 
 a{
     text-decoration: none;
@@ -52,7 +58,9 @@ padding-right: 30px;
 margin-top: 80px;
 
 }
-
+.hero h1{
+    font-weight: 600;
+}
 
 .color-one {
     color: #e74c3c; /* Bright Red */
@@ -352,6 +360,7 @@ color: white;
     transition: transform 0.3s, background-color 0.3s;
     position: relative;
     overflow: hidden;
+    margin-top: 20px;
 }
 
 .industry-box img {
@@ -578,9 +587,8 @@ background-color: #f4f4f4;
     padding: 20px; /* Add padding for content */
 
 }
-.how-it-works-content h2{
-    color: white !important;
-}
+
+
 
 .step {
     margin: 20px 0;
@@ -1084,7 +1092,7 @@ background-color: #f4f4f4;
 /* cta section start */
 .cta-content h2 {
     font-size: 2.5em; /* Heading size */
-    color: white !important; /* Heading color */
+
     margin-bottom: 20px; /* Spacing below heading */
 }
 
@@ -1450,8 +1458,8 @@ background-color: #f4f4f4;
             font-weight: 600;
 
 
-            font-family: 'Satisfy', cursive;
 
+            
         }
        
       
@@ -1464,7 +1472,7 @@ background-color: #f4f4f4;
             max-width: 800px; /* Max width for better text readability */
         }
         h1{
-            font-family: 'Pacifico', cursive;
+
             font-size: 4rem;
             color: #e74c3c; /* Bright red color */
 
@@ -1479,34 +1487,7 @@ background-color: #f4f4f4;
 
         }
 
-        h2{
-            font-size: 2.8rem !important;
-            background: linear-gradient(90deg, #2C3E50, #2C3E50);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
-            text-stroke: 1px rgba(0, 0, 0, 0.5); /* Works in some browsers */
-            font-weight: 500 !important;
-        }
-        @media (max-width: 992px) {
-            h2 {
-                font-size: 2rem !important; /* Adjust size for medium screens */
-            }
-        }
-        
-        @media (max-width: 768px) {
-            h2 {
-                font-size: 2rem !important; /* Adjust size for small screens */
-            }
-        }
-        
-        @media (max-width: 576px) {
-            h2 {
-                font-size: 2rem !important; /* Adjust size for extra small screens */
-            }
-        }
-
-
+       
         
         
           
