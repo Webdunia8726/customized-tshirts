@@ -1,6 +1,12 @@
 body {
     font-family: 'Poppins', sans-serif !important; /* Default font */
+
+    overflow-x: hidden; /* Horizontal overflow ko rokne ke liye */
+    overflow-y: auto; /* Vertical overflow ko auto set karein */
 }
+
+
+
 * {
     margin: 0;
     padding: 0;
