@@ -1,6 +1,7 @@
 body {
     font-family: 'Poppins', sans-serif !important; /* Default font */
 }
+
 a{
     text-decoration: none;
 }
@@ -51,11 +52,19 @@ padding-right: 30px;
 margin-top: 80px;
 }
 
-.left-content h1 {
-font-size: 50px;
-font-weight: bold;
-color: #2ebb77;
+
+.color-one {
+    color: #e74c3c; /* Bright Red */
 }
+
+.color-two {
+    color: #2ecc71; /* Green */
+}
+
+.color-three {
+    color: #3498db; /* Blue */
+}
+
 
 .left-content p {
 font-size: 1.2rem;
@@ -102,6 +111,12 @@ color: white;
 }
 .left-content {
   margin-bottom: 20px;
+  
+}
+
+
+.btn-custom1{
+    margin-top: 10px;
 }
 
 
@@ -123,8 +138,15 @@ color: white;
     font-size: 28px; /* Default font size */
     text-align: center;
     transition: transform 0.2s; /* Animation on hover */
-    font-weight: 600;
+    font-weight: 700;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+
+    /* Text stroke/shadow effect */
+    color: #e74c3c; /* Set the text color to white or your desired color */
+   
+    
 }
+
 
 /* Hover Effect for Stat Item */
 .stat-item:hover {
@@ -145,7 +167,7 @@ color: white;
 
     }
     .stat-item {
-        font-size: 20px; /* Even smaller font size for small screens */
+        font-size: 24px; /* Even smaller font size for small screens */
         padding: 6px 12px; /* Further adjust padding */
     }
 }
@@ -164,7 +186,444 @@ color: white;
 
 
 
+/* Why Choose Us Section */
+.why-choose-us {
+    background-color: #f9f9f9; /* Section background color */
+}
 
+.why-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    position: relative;
+}
+
+.why-heading::after {
+    content: '';
+    width: 80px;
+    height: 3px;
+    background-color: #ff5722; /* Accent color */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+.why-card {
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-10px); /* Lift the card on hover */
+}
+
+.why-icon {
+    font-size: 3rem;
+    color: #ff5722; /* Icon color */
+    margin-bottom: 15px;
+}
+
+.why-card h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.why-card p {
+    color: #777;
+    font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .why-heading {
+        font-size: 2rem;
+    }
+
+    .why-card {
+        padding: 15px;
+    }
+
+    .why-card h3 {
+        font-size: 1.25rem;
+    }
+}
+
+
+        /* Products Section Styling */
+        .products-section {
+            background-color: #f9f9f9;
+            padding: 50px 0;
+        }
+        
+        .product-image-wrapper {
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .product-image {
+            max-width: 100%;
+            height: auto;
+            border: 5px solid #ff5722;
+            border-radius: 10px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product-image:hover {
+            transform: scale(1.05);
+        }
+        
+        .product-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .list-group-item {
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            padding: 15px;
+            background-color: #fff;
+            border: 2px solid #ddd;
+            transition: background-color 0.3s ease;
+        }
+        
+        .list-group-item:hover {
+            background-color: #ff5722;
+            color: #fff;
+            border-color: #ff5722;
+        }
+        
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .product-list {
+                margin-top: 20px;
+            }
+        }
+
+
+       
+
+
+.industries-we-serve {
+    padding: 50px 0;
+    background-color: hwb(0 94% 5%);
+}
+
+.section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    width: 100px;
+    height: 3px;
+    background-color: #ff5722;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -10px;
+}
+
+
+
+
+
+
+.industry-box {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.industry-box img {
+    max-width: 100%;
+
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.industry-box:hover {
+    transform: translateY(-10px);
+    background-color: #ff5722;
+    color: #fff; 
+}
+
+.industry-box:hover h3, 
+.industry-box:hover p {
+    color: #fff;
+}
+
+.industry-box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    transition: color 0.3s;
+}
+
+.industry-box p {
+    font-size: 16px;
+    color: #777;
+    transition: color 0.3s;
+}
+
+/* Industry Box Hover Background Animation */
+.industry-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    background-color: rgba(0, 0, 0, 0.05);
+    transition: width 0.4s ease;
+}
+
+.industry-box:hover::before {
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .col-md-3 {
+        flex: 0 0 48%;
+        max-width: 48%;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-md-3 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .section-title {
+        font-size: 28px;
+    }
+}
+
+
+.client-work-section {
+    background-image: url('images/bg2.jpg'); /* Replace with your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Keeps the background fixed */
+    padding: 60px 0;
+    color: white;
+    
+
+}
+
+.client-work-section h2 {
+    font-size: 2.8rem;
+    font-weight: 600;
+    margin-bottom: 40px;
+    color: #fff !important; /* White text for better contrast */
+    text-transform: uppercase;
+
+    
+
+    -webkit-text-stroke: 2px black; /* Adds a stroke around the text */
+    text-stroke: 2px black; /* For browsers that support this property */
+}
+
+
+
+
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+
+
+.product-card img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-card h4 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.product-card p {
+    font-size: 1rem;
+    color: #777;
+}
+
+
+.bento-section {
+    padding: 50px 0;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.bento-title {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.bento-box {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s;
+    cursor: pointer;
+    margin-bottom: 30px; /* Spacing between bento items */
+}
+
+.bento-box:hover {
+    transform: scale(1.05);
+}
+
+.bento-box img {
+    width: 100%;
+    height: 300px; /* Fixed height */
+    object-fit: cover; /* Maintain aspect ratio */
+}
+
+.bento-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.bento-box:hover .bento-overlay {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.bento-item-title {
+    font-size: 24px;
+    font-weight: bold;
+    transition: color 0.3s; /* Smooth color change on hover */
+}
+
+.bento-item-desc {
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+}
+
+.bento-box:hover .bento-item-title {
+    color: #ffcc00; /* Change text color on hover */
+}
+
+@media (max-width: 768px) {
+    .bento-title {
+        font-size: 28px; /* Responsive title size */
+    }
+
+    .bento-item-title {
+        font-size: 20px; /* Responsive item title size */
+    }
+}
+        
+
+.how-it-works-section {
+    text-align: center;
+    padding: 50px 20px;
+    position: relative; /* For positioning the background image */
+    overflow: hidden; /* Hide overflow for better visual effects */
+    margin-top: 50px; /* Add some margin on top */
+}
+
+.how-it-works-background {
+    background-image: url('images/customizedtime.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-attachment: fixed; /* Keeps the background fixed during scroll */
+    background-position: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0; /* Keep it behind other content */
+    filter: blur(6px); /* Apply the blur effect */
+
+}
+
+.how-it-works-content {
+    position: relative; /* Ensure content is above the background */
+    z-index: 1; /* Raise the content above the background */
+    border-radius: 15px;
+    padding: 20px; /* Add padding for content */
+
+}
+.how-it-works-content h2{
+    color: white !important;
+}
+
+.step {
+    margin: 20px 0;
+}
+
+.step-icon {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.step-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #fff; /* White text color for better visibility */
+}
+
+.step-desc {
+    font-size: 16px;
+    color: #eee; /* Light text color for better visibility */
+}
+
+@media (max-width: 768px) {
+    .step-title {
+        font-size: 20px; /* Responsive title size */
+    }
+
+    .step-desc {
+        font-size: 14px; /* Responsive description size */
+    }
+}
 /* services */
 
 
@@ -211,7 +670,7 @@ color: white;
 .service-img img {
     width: 100%; /* Full width */
     border-radius: 8px; /* Rounded corners */
-    height: 280px;
+
 }
 
 .service-content h3 {
@@ -607,81 +1066,12 @@ color: white;
         padding: 30px 0;
     }
 }
-/***** Why Choose Us Section ******/
-.why-choose-us-section {
-    background-color: #f0f8ff; /* Light background */
-    padding: 80px 0;
-    position: relative;
-}
-
-.section-title {
-    font-size: 36px;
-    font-weight: 700;
-    color: #333;
-    text-transform: capitalize;
-    margin-bottom: 20px;
-    position: relative;
-}
-
-
-
-.section-description {
-    font-size: 18px;
-    color: #666;
-    max-width: 600px;
-    margin: 0 auto 40px;
-    line-height: 1.8;
-}
-
-.reason-card {
-    background-color: white;
-    border-radius: 10px;
-    padding: 30px 20px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    transition: all 0.3s ease;
-}
-
-.reason-card:hover {
-    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
-    transform: translateY(-5px);
-}
-
-.icon-box {
-    font-size: 40px;
-    color: #ff5722;
-    margin-bottom: 20px;
-}
-
-.reason-card h3 {
-    font-size: 24px;
-    font-weight: 600;
-    margin-bottom: 15px;
-    color: #333;
-}
-
-.reason-card p {
-    font-size: 16px;
-    color: #555;
-}
-
-@media (max-width: 768px) {
-    .reason-card {
-        padding: 20px;
-    }
-    .section-title {
-        font-size: 28px;
-    }
-    .section-description {
-        font-size: 16px;
-    }
-    .reason-card h3 {
-        font-size: 20px;
-    }
-}
 
 
 .cta-section {
-    background-color: #f8f9fa; /* Light background color */
+
+
+    background-color: #2ebb77;
     padding: 50px 20px; /* Padding around the section */
     text-align: center; /* Center align text */
 }
@@ -693,13 +1083,13 @@ color: white;
 
 .cta-content h2 {
     font-size: 2.5em; /* Heading size */
-    color: #333; /* Heading color */
+    color: white !important; /* Heading color */
     margin-bottom: 20px; /* Spacing below heading */
 }
 
 .cta-content p {
     font-size: 1.2em; /* Paragraph size */
-    color: #555; /* Paragraph color */
+    color: white; /* Paragraph color */
     margin-bottom: 30px; /* Spacing below paragraph */
 }
 
@@ -721,7 +1111,9 @@ color: white;
     transform: scale(1.1); /* Scale effect on hover */
 }
 
-
+.cta-button{
+    background-color: #e64a19 !important;
+}
 
 .cta-button:hover {
     background-color: #e64a19; /* Darker shade on hover */
@@ -1053,3 +1445,60 @@ color: white;
 
        
         
+
+        h2{
+            font-weight: 600;
+            font-family: 'Sacramento', cursive; /* Elegant monoline script style */
+
+        }
+       
+      
+        p {
+            font-family: 'Lora', serif; /* or 'Open Sans', sans-serif; */
+            font-size: 1.2rem !important; /* Adjust the size for better readability */
+            line-height: 1.6; /* Increased line height for better text flow */
+
+            margin: 15px 0; /* Margin for spacing between paragraphs */
+            max-width: 800px; /* Max width for better text readability */
+        }
+        h1{
+            font-family: 'Pacifico', cursive;
+            font-size: 4rem;
+            color: #e74c3c; /* Bright red color */
+
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            margin: 20px 0;
+            letter-spacing: 2px; /* Stylish spacing */
+            text-transform: uppercase; /* Uppercase text */
+        }
+        a{
+            font-family: 'Lora', serif; /* or 'Open Sans', sans-serif; */
+            font-size: 1.2rem !important; /* Adjust the size for better readability */
+
+        }
+
+        h2{
+            font-size: 2.8rem !important;
+            background: linear-gradient(90deg, #11ca71, #2ebb77);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            text-stroke: 1px rgba(0, 0, 0, 0.5); /* Works in some browsers */
+        }
+        @media (max-width: 992px) {
+            h2 {
+                font-size: 2rem !important; /* Adjust size for medium screens */
+            }
+        }
+        
+        @media (max-width: 768px) {
+            h2 {
+                font-size: 1.8rem !important; /* Adjust size for small screens */
+            }
+        }
+        
+        @media (max-width: 576px) {
+            h2 {
+                font-size: 1.5rem !important; /* Adjust size for extra small screens */
+            }
+        }

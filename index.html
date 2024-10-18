@@ -13,6 +13,8 @@
 <!-- Include jQuery and Owl Carousel JS and CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+
+
 </head>
 
 <body>
@@ -43,12 +45,17 @@
     </nav>
 
      <!-- Hero Section -->
-     <div class="container-fluid">
+     <div class="container-fluid herosection">
         <div class="row hero">
           <!-- Left Side: Text Content -->
           <div class="col-md-6 left-content">
             <a href="" class="herotopbtn">create your own</a>
-            <h1 class="mt-3">Custom T-shirt Designs</h1>
+            <h1 class="mt-3">
+                <span class="color-one">Custom</span>
+                <span class="color-two"> T-shirt</span>
+                <span class="color-three"> Designs</span>
+            </h1>
+            
             <p>
               Stand out in the crowd with your own personalized T-shirt. Create,
               customize, and wear your creativity!
@@ -67,7 +74,7 @@
   
           <!-- Right Side: Image -->
           <div class="col-md-6 right-content">
-            <img src="images/hero.png" alt="Custom T-shirt" class="img-fluid heroimg" />
+            <img src="images/herobg.png" alt="Custom T-shirt" class="img-fluid heroimg" />
           </div>
         </div>
       </div>
@@ -75,54 +82,40 @@
 
 
 
-      <!-- services -->
-
-
-      <!-- Our Services Section -->
-<section class="services-section py-5">
+      <!-- why c -->
+<!-- Why Choose Us Section -->
+<section class="why-choose-us py-5">
     <div class="container">
-        <h2 class="text-center services-heading mb-4">Our Premium Services</h2>
-        <div class="row">
-            <!-- Card 1: Custom Apparel Design -->
+        <h2 class="text-center why-heading mb-4">Why Choose Us?</h2>
+        <div class="row justify-content-center">
+            <!-- Card 1: Same Day Dispatch -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/customapp.png" alt="Custom Apparel Design" class="img-fluid">
+                <div class="why-card text-center">
+                    <div class="why-icon">
+                        <i class="fas fa-truck"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Custom Apparel Design</h3>
-                        <p>Create your own designs with the latest trends and styles. Stand out with unique custom apparel that fits your personality!</p>
-                        <a href="#" class="btn btn-custom">Contact Now</a>
-
-                    </div>
+                    <h3>Same Day Dispatch</h3>
+                    <p>We ensure that your orders are dispatched the same day, ensuring fast and reliable service.</p>
                 </div>
             </div>
-            <!-- Card 2: In-house Printing Services -->
+            <!-- Card 2: Honest Pricing -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/prinintingshirts.webp" alt="In-house Printing Services" class="img-fluid">
+                <div class="why-card text-center">
+                    <div class="why-icon">
+                        <i class="fas fa-tags"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>In-house Printing Services</h3>
-                        <p>Enjoy high-quality printing done with precision and care. We handle everything in-house for maximum control and efficiency.</p>
-                        <a href="#" class="btn btn-custom">Contact Now</a>
-
-                    </div>
+                    <h3>Honest Pricing</h3>
+                    <p>No hidden costs or extra charges. Our pricing is transparent and honest.</p>
                 </div>
             </div>
-            <!-- Card 3: Quality Fabric Selection -->
+            <!-- Card 3: Serving Customers Since 2015 -->
             <div class="col-md-4 col-sm-6 mb-4">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="images/fabric.jpg" alt="Quality Fabric Selection" class="img-fluid">
+                <div class="why-card text-center">
+                    <div class="why-icon">
+                        <i class="fas fa-calendar-alt"></i>
                     </div>
-                    <div class="service-content">
-                        <h3>Quality Fabric Selection</h3>
-                        <p>Choose from a wide range of premium fabrics to ensure your apparel feels as great as it looks.</p>
-                        <a href="#" class="btn btn-custom">Contact Now</a>
-
-                    </div>
+                    <h3>Serving Customers Since 2015</h3>
+                    <p>We have been delivering quality services to our customers for almost a decade.</p>
                 </div>
             </div>
         </div>
@@ -130,6 +123,289 @@
 </section>
 
 
+ <!-- Products We Offer Section -->
+ <section class="products-section py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Products We Offer</h2>
+        <div class="row">
+            <!-- Left Side: Image Display -->
+            <div class="col-md-6 col-sm-12 product-image-wrapper">
+                <img id="productImage" src="images/polotshirts.png" alt="Polo Tshirt" class="img-fluid product-image">
+            </div>
+            
+            <!-- Right Side: Product List -->
+            <div class="col-md-6 col-sm-12 product-list">
+                <ul class="list-group">
+                    <li class="list-group-item" onclick="showProduct('Polo Tshirt', 'images/polotshirts.png')">Polo Tshirt</li>
+                    <li class="list-group-item" onclick="showProduct('Round Neck Tshirt', 'images/roundneck.png')">Round Neck Tshirt</li>
+                    <li class="list-group-item" onclick="showProduct('Hoodies', 'images/hoddie (1).png')">Hoodies</li>
+                    <li class="list-group-item" onclick="showProduct('Corporate Shirts', 'images/corporateshirt.png')">Corporate Shirts</li>
+                    <li class="list-group-item" onclick="showProduct('Caps', 'images/cap.png')">Caps</li>
+                    <li class="list-group-item" onclick="showProduct('Tote Bags', 'images/tegobag.png')">Tote Bags</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<section class="testimonial-section">
+    <h2>What Our Customers Say</h2>
+    <div class="owl-carousel">
+        <div class="testimonial-item">
+            <p>"I had a fantastic experience with TeeSpace! The custom T-shirt I ordered was delivered on time and looked amazing!"</p>
+            <h4>- Sarah J.</h4>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <p>"The quality of the fabric and the print was top-notch. I will definitely order again!"</p>
+            <h4>- Mike L.</h4>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <p>"Customer service was excellent, and they helped me design my shirt perfectly!"</p>
+            <h4>- Emily R.</h4>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+            </div>
+        </div>
+        <div class="testimonial-item">
+            <p>"I love my new custom T-shirt! The colors are vibrant and the fit is perfect!"</p>
+            <h4>- David K.</h4>
+            <div class="rating">
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9733;</span>
+                <span>&#9734;</span>
+            </div>
+        </div>
+    </div>
+    <h3 class="text-center text-black">See what other people are saying about <br>
+        our custom apparel printing
+       
+        <br>
+        <span class="text-warning">&#9733;</span>
+        <span class="text-warning">&#9733;</span>
+        <span class="text-warning">&#9733;</span>
+        <span class="text-warning">&#9733;</span>
+        <span class="text-warning">&#9734;</span>  4.81 / 5.0</h3>
+</section>
+
+
+
+      <!-- services -->
+      <section class="client-work-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Work for Clients</h2>
+            <div class="owl-carousel owl-theme">
+                <!-- Slide 1: Product 1 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="images/tshirt1.jpg" alt="T-shirt for Client 1" class="product-img">
+                        <h4>Client 1</h4>
+                        <p>Custom T-shirt Design for XYZ Company.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 2: Product 2 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="images/tshirt2.jpg" alt="Hoodie for Client 2" class="product-img">
+                        <h4>Client 2</h4>
+                        <p>Corporate Hoodies for ABC Corp.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 3: Product 3 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="images/tshirt3.jpg" alt="Polo T-shirt for Client 3" class="product-img">
+                        <h4>Client 3</h4>
+                        <p>Polo T-shirts for DEF Enterprises.</p>
+                    </div>
+                </div>
+    
+                <!-- Slide 4: Product 4 -->
+                <div class="item">
+                    <div class="product-card">
+                        <img src="images/tshirt4.jpg" alt="Cap for Client 4" class="product-img">
+                        <h4>Client 4</h4>
+                        <p>Caps designed for GHI Company.</p>
+                    </div>
+                </div>
+    
+                <!-- You can add more slides as needed -->
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <!-- Industries We Serve Section -->
+    <section class="industries-we-serve">
+        <div class="container">
+            <h2 class="section-title">Industries We Serve</h2>
+            <div class="row">
+                <!-- Industry 1: Hospitality -->
+                <div class="col-md-3">
+                    <div class="industry-box">
+                        <img src="images/hospital.jpg"Hospitality">
+                        <h3>Hospitality</h3>
+                        <p>High-quality custom uniforms for the hospitality industry.</p>
+                    </div>
+                </div>
+
+                <!-- Industry 2: Corporate -->
+                <div class="col-md-3">
+                    <div class="industry-box">
+                        <img src="images/corporateshirts.jpg" alt="Corporate">
+                        <h3>Corporate</h3>
+                        <p>Professional corporate apparel for businesses.</p>
+                    </div>
+                </div>
+
+                <!-- Industry 3: Medical -->
+                <div class="col-md-3">
+                    <div class="industry-box">
+                        <img src="images/medicalorg.jpg" alt="Medical">
+                        <h3>Medical</h3>
+                        <p>Comfortable and durable medical uniforms for healthcare professionals.</p>
+                    </div>
+                </div>
+
+                <!-- Industry 4: Manufacturing -->
+                <div class="col-md-3">
+                    <div class="industry-box">
+                        <img src="images/workwear.jpg" alt="Manufacturing">
+                        <h3>Manufacturing</h3>
+                        <p>Customized workwear for the manufacturing sector.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+      <!-- Our Clients' Brands Section -->
+      <section class="clients-section">
+        <h2>Our Clients' Brands</h2>
+        <div class="container">
+            <div class="owl-carousel owl-theme">
+                <div class="item"><img src="https://example.com/brand1.png" alt="Brand 1"></div>
+                <div class="item"><img src="https://example.com/brand2.png" alt="Brand 2"></div>
+                <div class="item"><img src="https://example.com/brand3.png" alt="Brand 3"></div>
+                <div class="item"><img src="https://example.com/brand4.png" alt="Brand 4"></div>
+                <div class="item"><img src="https://example.com/brand5.png" alt="Brand 5"></div>
+                <div class="item"><img src="https://example.com/brand6.png" alt="Brand 6"></div>
+            </div>
+        </div>
+    </section>
+
+
+     <!-- Type of Printing We Offer Section -->
+     <section class="bento-section">
+        <h2 class="bento-title">Types of Printing We Offer</h2>
+        <div class="container">
+            <div class="row">
+                <!-- DTF Printing -->
+                <div class="col-md-6 ">
+                    <div class="bento-box">
+                        <img src="images/dtf.jpg" alt="DTF Printing"> <!-- Replace with your image -->
+                        <div class="bento-overlay">
+                            <h3 class="bento-item-title">DTF</h3>
+                            <p class="bento-item-desc">Direct to Film printing for vibrant designs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Embroidery Printing -->
+                <div class="col-md-6 ">
+                    <div class="bento-box">
+                        <img src="images/Embroidery.jpg" alt="Embroidery Printing"> <!-- Replace with your image -->
+                        <div class="bento-overlay">
+                            <h3 class="bento-item-title">Embroidery</h3>
+                            <p class="bento-item-desc">High-quality stitching for durable designs.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Screen Printing -->
+                <div class="col-md-6 ">
+                    <div class="bento-box">
+                        <img src="images/Screen Printing.jpg" alt="Screen Printing"> <!-- Replace with your image -->
+                        <div class="bento-overlay">
+                            <h3 class="bento-item-title">Screen Printing</h3>
+                            <p class="bento-item-desc">Classic method for rich colors and large volumes.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Vinyl Printing -->
+                <div class="col-md-6 ">
+                    <div class="bento-box">
+                        <img src="images/vinyl.jpg" alt="Vinyl Printing"> <!-- Replace with your image -->
+                        <div class="bento-overlay">
+                            <h3 class="bento-item-title">Vinyl</h3>
+                            <p class="bento-item-desc">Flexible and durable printing for various applications.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="how-it-works-section">
+        <div class="how-it-works-background"></div> <!-- Background Image -->
+        <div class="how-it-works-content">
+            <h2>How It Works</h2>
+            <div class="container">
+                <div class="row">
+                    <!-- Step 1: Send Your Design -->
+                    <div class="col-md-4 step">
+                        <div class="step-icon">🖌️</div>
+                        <h3 class="step-title">Send Your Design</h3>
+                        <p class="step-desc">Upload your design files for printing.</p>
+                    </div>
+
+                    <!-- Step 2: Approve Mockup -->
+                    <div class="col-md-4 step">
+                        <div class="step-icon">✅</div>
+                        <h3 class="step-title">Approve Mockup</h3>
+                        <p class="step-desc">Review and approve the mockup design.</p>
+                    </div>
+
+                    <!-- Step 3: We Print and Deliver -->
+                    <div class="col-md-4 step">
+                        <div class="step-icon">🚚</div>
+                        <h3 class="step-title">We Print and Deliver</h3>
+                        <p class="step-desc">We print your design and deliver it to you.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      
+    
 <!-- About Us Section -->
 <section class="about-us py-5">
     <div class="container">
@@ -199,112 +475,6 @@
 
 <!-- our work -->
 
-<!-- Our Work Section -->
-<section class="our-work py-5">
-    <div class="container">
-        <h2 class="section-title text-center">Our Recent Work</h2>
-        <div class="row">
-            <!-- Work Item 1 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="work-item">
-                    <img src="images/zomato.jpg" alt="Work 1" class="img-fluid">
-                    <div class="work-content">
-                        <h3>Custom T-shirt Design</h3>
-                        <p>Creative and personalized T-shirt designs that stand out in any crowd.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Work Item 2 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="work-item">
-                    <img src="images/kfc.webp" alt="Work 2" class="img-fluid">
-                    <div class="work-content">
-                        <h3>In-House Printing Services</h3>
-                        <p>We ensure high-quality printing that brings your designs to life with precision.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Work Item 3 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="work-item">
-                    <img src="images/ourproject1.jpg" alt="Work 3" class="img-fluid">
-                    <div class="work-content">
-                        <h3>Premium Fabric Selection</h3>
-                        <p>Choose from a wide range of premium fabrics for ultimate comfort and durability.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- Work Item 4 -->
-            <div class="col-lg-6 col-md-6 mb-4">
-                <div class="work-item">
-                    <img src="work4.jpg" alt="Work 4" class="img-fluid">
-                    <div class="work-content">
-                        <h3>Exclusive Apparel Designs</h3>
-                        <p>Unique designs tailored to your brand's identity, leaving a lasting impression.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- Our Clients Section -->
-<section class="our-clients py-5">
-    <div class="container">
-        <h2 class="section-title text-center">Our Trusted Clients</h2>
-        <p class="text-center section-subtitle">We take pride in working with some of the best brands in the world</p>
-        <div class="row">
-            <!-- Client 1 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="images/tipox.png" alt="Client 1" class="img-fluid">
-                </div>
-            </div>
-            <!-- Client 2 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="images/tipox.png" alt="Client 2" class="img-fluid">
-                </div>
-            </div>
-            <!-- Client 3 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="images/tipox.png" alt="Client 3" class="img-fluid">
-                </div>
-            </div>
-            <!-- Client 4 -->
-            <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="images/tipox.png" alt="Client 4" class="img-fluid">
-                </div>
-            </div>
-            <!-- Client 5 -->
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="client5.png" alt="Client 5" class="img-fluid">
-                </div>
-            </div> -->
-            <!-- Client 6 -->
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="client6.png" alt="Client 6" class="img-fluid">
-                </div>
-            </div> -->
-            <!-- Client 7 -->
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="client7.png" alt="Client 7" class="img-fluid">
-                </div>
-            </div> -->
-            <!-- Client 8 -->
-            <!-- <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
-                <div class="client-logo">
-                    <img src="client8.png" alt="Client 8" class="img-fluid">
-                </div>
-            </div> -->
-        </div>
-    </div>
-</section>
 
 
 <section class="ideas-section py-5">
@@ -363,61 +533,13 @@
 </section>
 
 
-<section class="why-choose-us-section py-5">
-    <div class="container">
-        <div class="row justify-content-center mb-4">
-            <div class="col-md-8 text-center">
-                <h2 class="section-title">Why Choose Us for Customized T-Shirts?</h2>
-                <p class="section-description">Discover the reasons why our clients love working with us. We provide unmatched quality, design flexibility, and top-notch service for all your custom apparel needs.</p>
-            </div>
-        </div>
-        <div class="row text-center">
-            <div class="col-md-3 mb-4">
-                <div class="reason-card">
-                    <div class="icon-box">
-                        <i class="fas fa-palette"></i> <!-- Icon -->
-                    </div>
-                    <h3>Creative Designs</h3>
-                    <p>We offer limitless design flexibility to make sure your T-shirts reflect your unique style and brand.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="reason-card">
-                    <div class="icon-box">
-                        <i class="fas fa-check-circle"></i> <!-- Icon -->
-                    </div>
-                    <h3>High-Quality Prints</h3>
-                    <p>State-of-the-art printing technology ensures vibrant, long-lasting prints on every shirt.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="reason-card">
-                    <div class="icon-box">
-                        <i class="fas fa-shipping-fast"></i> <!-- Icon -->
-                    </div>
-                    <h3>Fast Turnaround</h3>
-                    <p>Quick and efficient services with guaranteed on-time delivery for every custom order.</p>
-                </div>
-            </div>
-            <div class="col-md-3 mb-4">
-                <div class="reason-card">
-                    <div class="icon-box">
-                        <i class="fas fa-users"></i> <!-- Icon -->
-                    </div>
-                    <h3>Customer-Centric</h3>
-                    <p>We prioritize customer satisfaction by providing support every step of the way.</p>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 
 <section class="cta-section">
     <div class="cta-content">
         <h2>Bring Your Ideas to Life</h2>
         <p>Explore our range of customizable products and let your creativity shine.</p>
         <div class="cta-images">
-            <img src="path-to-your-image/image1.jpg" alt="Image 1" />
+            <img src="images/" alt="Image 1" />
             <img src="path-to-your-image/image2.jpg" alt="Image 2" />
             <img src="path-to-your-image/image3.jpg" alt="Image 3" />
             <img src="path-to-your-image/image4.jpg" alt="Image 4" />
@@ -469,55 +591,6 @@
     </div>
 </section>
 
-<section class="testimonial-section">
-    <h2>What Our Customers Say</h2>
-    <div class="owl-carousel">
-        <div class="testimonial-item">
-            <p>"I had a fantastic experience with TeeSpace! The custom T-shirt I ordered was delivered on time and looked amazing!"</p>
-            <h4>- Sarah J.</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9734;</span>
-            </div>
-        </div>
-        <div class="testimonial-item">
-            <p>"The quality of the fabric and the print was top-notch. I will definitely order again!"</p>
-            <h4>- Mike L.</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-            </div>
-        </div>
-        <div class="testimonial-item">
-            <p>"Customer service was excellent, and they helped me design my shirt perfectly!"</p>
-            <h4>- Emily R.</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-            </div>
-        </div>
-        <div class="testimonial-item">
-            <p>"I love my new custom T-shirt! The colors are vibrant and the fit is perfect!"</p>
-            <h4>- David K.</h4>
-            <div class="rating">
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9733;</span>
-                <span>&#9734;</span>
-            </div>
-        </div>
-    </div>
-</section>
 
 
 <section class="contact-us">
@@ -651,17 +724,41 @@
 });
 
     </script>
-    <script>
-        $(document).ready(function(){
-            $(".owl-carousel").owlCarousel({
-                items: 1, // Number of items to display
-                loop: true, // Loop through items
-                autoplay: true, // Enable autoplay
-                autoplayTimeout: 5000, // Time between transitions
-                autoplayHoverPause: true, // Pause on hover
-                dots: true // Show dots for navigation
-            });
-        });
-        </script>
+
+
+
+<script>
+    function showProduct(productName, imageUrl) {
+// Change the image source
+document.getElementById('productImage').src = imageUrl;
+// Change the alt attribute for accessibility
+document.getElementById('productImage').alt = productName;
+}
+
+
+$(document).ready(function(){
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 20,
+    nav: true,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    responsive: {
+        0: {
+            items: 1
+        },
+        600: {
+            items: 2
+        },
+        1000: {
+            items: 4
+        }
+    }
+  });
+});
+
+</script>
+
+
 </body>
 </html>
