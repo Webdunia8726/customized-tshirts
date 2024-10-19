@@ -1681,3 +1681,41 @@ background-color: #f4f4f4;
     
     
     }
+
+    .contact-buttons {
+        position: fixed; /* Fix position to the bottom */
+        bottom: 20px; /* Space from the bottom */
+        width: 100%; /* Full width */
+        display: flex; /* Use flexbox for alignment */
+        justify-content: space-between; /* Space between buttons */
+        padding: 0 20px; /* Padding for left and right */
+
+        z-index: 1000; /* Higher z-index to ensure it is on top */
+    }
+    
+    .contact-buttons a {
+        background-color: #25D366; /* WhatsApp color */
+        color: white;
+        text-decoration: none;
+        width: 60px; /* Width for circular buttons */
+        height: 60px; /* Height for circular buttons */
+        border-radius: 50%; /* Circular shape */
+        display: flex; /* Flexbox for icon */
+        align-items: center; /* Center icon vertically */
+        justify-content: center; /* Center icon horizontally */
+        transition: background-color 0.3s; /* Transition for hover effect */
+        font-size: 1.5em; /* Icon size */
+    }
+    
+    .call-button {
+        background-color: #4CAF50; /* Call button color */
+    }
+    
+    .call-button:hover {
+        background-color: #45a049; /* Darker green on hover */
+    }
+    
+    .whatsapp-button:hover {
+        background-color: #1DA1F2; /* Darker WhatsApp color on hover */
+    }
+    
