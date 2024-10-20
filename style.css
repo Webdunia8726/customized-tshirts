@@ -281,6 +281,9 @@ color: white;
             background-color: #f9f9f9;
             padding: 50px 0;
         }
+        .product-card{
+background-color: #f2f2f2 !important;
+        }
         
         .product-image-wrapper {
             text-align: center;
@@ -459,13 +462,9 @@ color: white;
     font-size: 2.8rem;
     font-weight: 600;
     margin-bottom: 40px;
-    color: #fff !important; /* White text for better contrast */
-    text-transform: uppercase;
 
     
-
-    -webkit-text-stroke: 2px black; /* Adds a stroke around the text */
-    text-stroke: 2px black; /* For browsers that support this property */
+    
 }
 
 
@@ -658,6 +657,8 @@ background-color: #f4f4f4;
     text-align: center;
     border-radius: 10px;
     transition: box-shadow 0.3s ease;
+
+
     box-shadow: rgba(17, 17, 26, 0.05) 0px 1px 0px, rgba(17, 17, 26, 0.1) 0px 0px 8px;
 }
 
@@ -1245,6 +1246,10 @@ background-color: #f4f4f4;
     line-height: 1.6;
 }
 
+.faq-question h3{
+    font-size: 20px !important;
+}
+
 .faq-icon {
     font-size: 1.5em;
     color: #ff5722;
@@ -1268,7 +1273,7 @@ background-color: #f4f4f4;
         padding: 15px;
     }
     .faq-question {
-        font-size: 1.1em;
+        font-size: 1.1em !important;
     }
 }
 
@@ -1351,6 +1356,74 @@ background-color: #f4f4f4;
 @media (max-width: 480px) {
     .testimonial-item {
         flex: 1 1 100%; /* 1 card on small screens */
+    }
+}
+
+/* General Styling */
+
+
+
+
+
+h3 {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: 600;
+}
+
+.ctabtn {
+
+    color: #fff;
+    padding: 12px 30px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: all 0.3s ease;
+
+}
+
+
+
+.mt-5 {
+    margin-top: 3rem;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    h3 {
+        font-size: 1.6rem;
+        line-height: 1.4;
+    }
+
+    .ctabtn {
+        font-size: 0.95rem;
+        padding: 10px 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    h3 {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+
+    .ctabtn {
+        font-size: 0.9rem;
+        padding: 8px 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    h3 {
+        font-size: 1.2rem;
+        line-height: 1.2;
+        margin-bottom: 10px;
+    }
+
+    .ctabtn {
+        font-size: 0.85rem;
+        padding: 6px 18px;
     }
 }
 
