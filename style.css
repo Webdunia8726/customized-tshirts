@@ -50,160 +50,8 @@ a{
 }
 
 
-.herotopbtn{
-    background-color: #f4ebf9;
-    border: 1px solid rgb(219, 209, 209);
-    padding: 8px;
-    text-decoration: none;
-    border-radius: 40px;
-    color: #b379d8;
-    font-weight: 600;
-}
-
-.hero {
-display: flex;
-align-items: center;
-padding-top: 50px;
-padding-left: 30px;
-padding-right: 30px;
-margin-top: 80px;
-
-}
-.hero h1{
-    font-weight: 600;
-}
-
-.color-one {
-    color: #e74c3c; /* Bright Red */
-}
-
-.color-two {
-    color: #2ecc71; /* Green */
-}
-
-.color-three {
-    color: #3498db; /* Blue */
-}
 
 
-.left-content p {
-font-size: 1.2rem;
-color: #555;
-}
-
-.btn-custom {
-background-color: #2ebb77;
-color: white;
-padding: 10px 20px;
-font-size: 1.1rem;
-border-radius: 30px;
-text-decoration: none;
-font-family: 'Roboto', sans-serif;
-
-}
-
-
-.btn-custom1{
-
-
-    padding: 10px 20px;
-    font-size: 1.1rem;
-    border-radius: 30px;
-    text-decoration: none;
-    font-family: 'Roboto', sans-serif; 
-    border: 2px solid #2ebb77;
-}
-.btn-custom1:hover{
-    background-color: #e64a19;
-color: white;
-}
-
-.btn-custom:hover {
-background-color: #e64a19;
-color: white;
-}
-
-
-@media (max-width: 768px) {
-.hero {
-  flex-direction: column;
-  text-align: center;
-}
-
-.left-content {
-  margin-bottom: 20px;
-  
-}
-
-
-.btn-custom1{
-    margin-top: 10px;
-}
-
-
-}
-
-/* Stats Container */
-.stats {
-    display: flex;
-    margin-top: 20px; /* Spacing above stats */
-    flex-wrap: wrap; /* Wrap items on small screens */
-}
-
-/* Individual Stat Item */
-.stat-item {
-    line-height: 20px;
-    border-radius: 15px;
-    padding: 10px 20px;
-    margin: 10px; /* Spacing between items */
-    font-size: 28px; /* Default font size */
-    text-align: center;
-    transition: transform 0.2s; /* Animation on hover */
-    font-weight: 700;
-    text-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
-
-    /* Text stroke/shadow effect */
-    color: #e74c3c; /* Set the text color to white or your desired color */
-   
-    
-}
-
-
-/* Hover Effect for Stat Item */
-.stat-item:hover {
-    transform: scale(1.05); /* Slightly scale on hover */
-}
-
-/* Responsive adjustments */
-@media (max-width: 1024px) {
-    .stat-item {
-        font-size: 24px; /* Slightly smaller font size for medium screens */
-        padding: 8px 16px; /* Adjust padding */
-    }
-}
-
-@media (max-width: 768px) {
-    .stats{
-        justify-content: center; /* Center the stats horizontally */
-
-    }
-    .stat-item {
-        font-size: 24px; /* Even smaller font size for small screens */
-        padding: 6px 12px; /* Further adjust padding */
-    }
-}
-
-@media (max-width: 480px) {
-    .stat-item {
-        font-size: 18px; /* Smallest font size for extra small screens */
-        padding: 4px 8px; /* Minimal padding */
-    }
-}
-
-/* Additional styles for specific responsive design */
-.stats1 {
-    font-size: 18px !important; /* Ensure this is smaller on all devices */
-}
 
 
 
@@ -220,6 +68,11 @@ color: white;
     font-family: 'Playfair Display', serif;
 
 }
+
+
+
+
+
 
 .why-heading::after {
     content: '';
@@ -276,66 +129,6 @@ color: white;
 }
 
 
-        /* Products Section Styling */
-        .products-section {
-            background-color: #f9f9f9;
-            padding: 50px 0;
-        }
-        .product-card{
-background-color: #f2f2f2 !important;
-        }
-        
-        .product-image-wrapper {
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .product-image {
-            max-width: 100%;
-            height: auto;
-
-            border-radius: 10px;
-
-            transition: transform 0.3s ease-in-out;
-        }
-        
-        .product-image:hover {
-            transform: scale(1.05);
-        }
-        
-        .product-list {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .list-group-item {
-            font-size: 1rem;
-            font-weight: bold;
-            cursor: pointer;
-            padding: 15px;
-            background-color: #fff;
-            border: 2px solid #ddd;
-            transition: background-color 0.3s ease;
-        }
-        
-        .list-group-item:hover {
-            background-color: #ff5722;
-            color: #fff;
-            border-color: #ff5722;
-        }
-        
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .product-list {
-                margin-top: 20px;
-            }
-        }
-
-
-       
 
 
 .industries-we-serve {

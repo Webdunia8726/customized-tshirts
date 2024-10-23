@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuous Slick Slider - Left to Right</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Prevent scrollbars */
+            background-color: #f0f0f0; /* Light background */
+        }
+
+        .unique-slider-container {
+            padding: 20px;
+        }
+
+        .unique-slider {
+            width: 100%;
+            height: 80vh;
+        }
+
+        .unique-slider-item {
+            padding: 10px;
+        }
+
+        .unique-slider-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Reverse sliding direction */
+        .slick-track {
+            display: flex;
+            flex-direction: row-reverse;
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .unique-slider {
+                height: 50vh;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .unique-slider {
+                height: 30vh;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="unique-slider-container p-5">
+        <div class="unique-slider">
+            <div class="unique-slider-item"><img src="images/aboutourmission.png" alt="Image 1"></div>
+            <div class="unique-slider-item"><img src="https://via.placeholder.com/800x400?text=Image+2" alt="Image 2"></div>
+            <div class="unique-slider-item"><img src="https://via.placeholder.com/800x400?text=Image+3" alt="Image 3"></div>
+            <div class="unique-slider-item"><img src="https://via.placeholder.com/800x400?text=Image+4" alt="Image 4"></div>
+            <div class="unique-slider-item"><img src="https://via.placeholder.com/800x400?text=Image+5" alt="Image 5"></div>
+            <div class="unique-slider-item"><img src="https://via.placeholder.com/800x400?text=Image+6" alt="Image 6"></div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.unique-slider').slick({
+                autoplay: true,       // Enable autoplay
+                autoplaySpeed: 0,    // Continuous sliding speed
+                speed: 2000,         // Speed of the transition
+                infinite: true,      // Infinite looping
+                slidesToShow: 4,     // Show 4 slides on desktop
+                slidesToScroll: 1,   // Scroll 1 slide at a time
+                cssEase: 'linear',   // Linear transition for continuous effect
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
+</body>
+</html>
